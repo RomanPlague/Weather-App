@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="currentTemp">Current Temperature</string>
+    <string name="hh_mm">hh:mm</string>
+    <string name="click_me">Refresh</string>
+    <string name="High">High</string>
+    <string name="Low">Low</string>
+    <string name="condition">Conditions</string>
+</resources>

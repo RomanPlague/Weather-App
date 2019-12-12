@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient_background">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/click_me"
+        android:id="@+id/button"/>
+
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_below="@+id/dataLocation"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:hint="@string/hh_mm"
+        android:format12Hour="hh:mm:ss a"
+        android:gravity="center_horizontal|top"
+        android:textColor="#000"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        android:minHeight="0dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="location"
+        android:textColor="@color/greyish"
+        android:id="@+id/dataLocation"
+        android:gravity="top|center"
+        android:textSize="28sp"
+        />
+
+    <ImageView
+        android:id="@+id/conditionImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignBottom="@+id/conditions"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:id="@+id/conditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/condition"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/textClock"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_marginRight="25dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/currentTemp"
+        android:gravity="top|center_horizontal"
+        android:layout_below="@id/textClock"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginBottom="2dp"
+        android:textSize="46sp"
+        android:id="@+id/currentTemp"/>
+
+
+    <GridView android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/currentTemp"
+        android:numColumns="3"
+        android:verticalSpacing="0dp"
+        android:horizontalSpacing="5dp"
+        android:gravity="center"
+        android:scrollbars="none"
+        android:contextClickable="false">
+    </GridView>
+
+
+
+
+</RelativeLayout>
